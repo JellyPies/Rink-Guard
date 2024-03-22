@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="left-ribbon">
+		<h1>{{arena | truncate: 3: "."}}</h1>
+	</div>
+	<div class="content">
+		<div class="stat-row stat-row-border">
+			<p><ion-icon slot="start" name="calendar-outline"></ion-icon> {{totalRentals || "Data unavailable"}}</p>
+		</div>
+		<div class="stat-row stat-row-border">
+			<p><ion-icon slot="start" name="time-outline"></ion-icon> {{firstRental || "Data unavailable"}}</p>
+		</div>
+		<div class="stat-row">
+			<p><ion-icon slot="start" name="checkmark-done-circle-outline"></ion-icon> {{lastRental || "Data unavailable"}}</p>
+		</div>
+	</div>
+</div>

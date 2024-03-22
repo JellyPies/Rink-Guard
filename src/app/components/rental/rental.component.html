@@ -1,0 +1,28 @@
+<div class="container">
+	<div [ngStyle]="{'background-color': rental.Time | rentalPicto: true}" class="con-header">
+		<div class="header-icon">
+			<ion-icon name="{{rental.Time | rentalPicto: false}}" size="large"></ion-icon>
+		</div>
+		<div class="header-text">
+			<h3>{{rental.Time}}</h3>
+		</div>
+	</div>
+	<div class="con-body">
+		<div class="home-team">
+			<p class="team-name">{{rental.Home}}</p>
+			<p class="team-type">Home</p>
+			<p class="team-room">ROOM: {{rental.HomeChangeroom}}</p>
+		</div>
+		<div class="home-details">
+			
+		</div>
+		<div class="vs-text">
+			<h1>VS</h1>
+		</div>
+		<div class="visitor-team">
+			<p class="team-name">{{rental.Visitor || rental.Home}}</p>
+			<p class="team-type">Visitor</p>
+			<p class="team-room">ROOM: {{rental.VisitorChangeroom || rental.HomeChangeroom}}</p>
+		</div>
+	</div>
+</div>

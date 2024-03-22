@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+	<div class="segment-holder">
+		<ion-segment class="color-segments" value="IRC" mode="ios" (ionChange)="updateArena($event.target.value)">
+			<ion-segment-button value="IRC">
+				<ion-label>IRC</ion-label>
+			</ion-segment-button>
+			<ion-segment-button value="LEFROY">
+				<ion-label>LEFROY</ion-label>
+			</ion-segment-button>
+			<ion-segment-button disabled="true" value="STROUD">
+				<ion-label>STROUD</ion-label>
+			</ion-segment-button>
+		</ion-segment>
+
+		<ion-segment *ngIf="arena === 'IRC'" value="RED" mode="ios" (ionChange)="updateIRC($event.target.value)">
+			<ion-segment-button class="irc-red" value="RED">
+				<ion-label>RED</ion-label>
+			</ion-segment-button>
+			<ion-segment-button class="irc-gold" value="GOLD">
+				<ion-label>GOLD</ion-label>
+			</ion-segment-button>
+		</ion-segment>
+	</div>
+	
+	<div *ngIf="rentals.length !== 0" class="rentals">
+		<app-rental *ngFor="let rental of rentals" [rental]="rental"></app-rental>
+	</div>
+
+	<div class="ion-text-center" *ngIf="rentals.length === 0">
+        <h3>No Scheduled Rentals</h3>
+      </div>
+
+	<!-- <ion-list [inset]="true">
+		<ion-item>
+		</ion-item>
+	  </ion-list> -->
+</ion-content>

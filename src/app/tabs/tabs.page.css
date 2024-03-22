@@ -1,0 +1,9 @@
+ion-tabs {
+  background-color: transparent;
+}
+
+.tab-bar {
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid var(--ion-color-primary);
+}/*# sourceMappingURL=tabs.page.css.map */

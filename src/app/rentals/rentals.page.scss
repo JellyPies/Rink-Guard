@@ -1,0 +1,24 @@
+.segment-holder {
+	margin: 10px;
+}
+
+.segment-holder ion-segment {
+	margin-bottom: 10px;
+}
+
+.color-segments ion-segment-button {
+	--indicator-color: var(--ion-color-secondary);
+}
+
+.irc-red {
+	--indicator-color: var(--ion-color-danger);
+}
+
+.irc-gold {
+	--indicator-color: var(--ion-color-primary);
+}
+
+app-rental {
+	width: 100%;
+	height: 100%;
+}
