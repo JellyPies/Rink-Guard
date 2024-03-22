@@ -1,8 +1,8 @@
 {
-  "name": "app",
-  "short_name": "app",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Rink Guard",
+  "short_name": "Rink Guard",
+  "theme_color": "#EBB014",
+  "background_color": "#1a1a1a",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
