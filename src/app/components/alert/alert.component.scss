@@ -1,0 +1,48 @@
+.container {
+	margin-top: 10px;
+	padding: 10px;
+	padding-top: 0px;
+	width: 100%;
+	height: 120px;
+}
+
+.left-ribbon {
+	text-align: center;
+	background-color: var(--ion-color-danger);
+	width: 20%;
+	height: 120px;
+	float: left;
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: -3px 0px var(--ion-color-danger);
+	background-image: url("../../../assets/backgrounds/arena-stat-texture.png");
+	background-repeat: repeat;
+}
+
+.left-ribbon h1 {
+	padding-top: 35%;
+}
+
+.content {
+	width: 80%;
+	height: 120px;
+	float: left;
+	background-color: #1f1f1f;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.stat-row {
+	width: 100%;
+	height: 31.66px;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.stat-row p {
+	padding: 0;
+	margin: 0;
+}
+
+.stat-row-border {
+	border-bottom: 1px solid var(--ion-color-primary-shade);
+}
