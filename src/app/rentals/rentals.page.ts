@@ -4,13 +4,14 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonSegment, IonSegmentButt
 import { RentalComponent } from '../components/rental/rental.component';
 import { RentalService } from '../services/rental.service';
 import { Rental } from '../interfaces/Rental';
+import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 
 @Component({
 	selector: 'app-rentals',
 	templateUrl: 'rentals.page.html',
 	styleUrls: ['rentals.page.scss'],
 	standalone: true,
-	imports: [IonList, IonItem, IonLabel, IonSegmentButton, IonSegment, IonHeader, IonToolbar, IonTitle, IonContent, CommonModule, RentalComponent],
+	imports: [IonList, IonItem, IonLabel, IonSegmentButton, IonSegment, IonHeader, IonToolbar, IonTitle, IonContent, CommonModule, RentalComponent, TruncatePipe],
 })
 export class RentalsPage implements OnInit {
 	rentals: Rental[] = [];

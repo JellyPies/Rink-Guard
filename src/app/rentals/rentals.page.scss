@@ -7,7 +7,7 @@
 }
 
 .color-segments ion-segment-button {
-	--indicator-color: var(--ion-color-secondary);
+	--indicator-color: var(--ion-color-primary);
 }
 
 .irc-red {
@@ -15,7 +15,7 @@
 }
 
 .irc-gold {
-	--indicator-color: var(--ion-color-primary);
+	--indicator-color: var(--ion-color-warning);
 }
 
 app-rental {

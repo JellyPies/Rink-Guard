@@ -1,13 +1,16 @@
 <div class="container">
-	<div class="left-ribbon">
-		<h1><ion-icon slot="start" name="warning-outline"></ion-icon></h1>
+	<div class="left-ribbon-{{alertType}}">
+		<h1><ion-icon slot="start" name="{{alertIcon}}"></ion-icon></h1>
 	</div>
 	<div class="content">
 		<div class="stat-row stat">
-			<strong><p>SERVICE DISRUPTION</p></strong>
+			<strong><p>{{alertTitle}}</p></strong>
 		</div>
 		<div class="stat-row">
-			<p>An unexpected problem is causing the "rental end time" values below to be inaccurate at times. Please check the full list of rentals to determine the schedule.</p>
+			<p>{{alertBody}}</p>
+		</div>
+		<div *ngIf="alertLink" class="stat-row">
+			<a href="{{alertLink}}" target="_blank">View Link</a>
 		</div>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, Input } from '@angular/core';
-import { calendarOutline, checkmarkDoneCircleOutline, timeOutline } from 'ionicons/icons';
+import { calendarOutline, checkmarkDoneCircleOutline, timeOutline, informationCircleOutline } from 'ionicons/icons';
 import { IonIcon } from "@ionic/angular/standalone";
 import { addIcons } from 'ionicons';
 import { Rental } from 'src/app/interfaces/Rental';
@@ -25,7 +25,7 @@ export class RinkStatsComponent implements OnInit {
 	lastRental?:string;
 
 	constructor(private rentalService:RentalService) {
-		addIcons({calendarOutline, checkmarkDoneCircleOutline, timeOutline});
+		addIcons({calendarOutline, checkmarkDoneCircleOutline, timeOutline, informationCircleOutline});
 	 }
 
 	ngOnInit() { 

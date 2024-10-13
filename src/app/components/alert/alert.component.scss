@@ -6,7 +6,7 @@
 	height: 135px;
 }
 
-.left-ribbon {
+.left-ribbon-warning {
 	text-align: center;
 	background-color: var(--ion-color-danger);
 	width: 20%;
@@ -18,7 +18,23 @@
 	background-repeat: repeat;
 }
 
-.left-ribbon h1 {
+.left-ribbon-information {
+	text-align: center;
+	background-color: var(--ion-color-secondary);
+	width: 20%;
+	height: 135px;
+	float: left;
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: -3px 0px var(--ion-color-secondary);
+	background-image: url("../../../assets/backgrounds/arena-stat-texture.png");
+	background-repeat: repeat;
+}
+
+.left-ribbon-warning h1 {
+	padding-top: 35%;
+}
+
+.left-ribbon-information h1 {
 	padding-top: 35%;
 }
 

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { warningOutline } from 'ionicons/icons';
+import { Component, Input } from '@angular/core';
+import { warningOutline, informationCircleOutline } from 'ionicons/icons';
 import { IonIcon } from "@ionic/angular/standalone";
 import { addIcons } from 'ionicons';
 
@@ -13,8 +13,14 @@ import { addIcons } from 'ionicons';
 })
 export class AlertComponent {
 
+	@Input() alertTitle!:string;
+	@Input() alertBody!:string;
+	@Input() alertType!:string;
+	@Input() alertIcon!:string;
+	@Input() alertLink!:string;
+
   constructor() { 
-	addIcons({warningOutline});
+	addIcons({warningOutline, informationCircleOutline});
   }
 
 }

@@ -3,7 +3,6 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 import { RinkStatsComponent } from '../components/rink-stats/rink-stats.component';
 import { WeatherAlertService } from '../services/weather-alert.service';
 import { Alerts } from '../interfaces/WeatherAlert';
-import { AlertComponent } from '../components/alert/alert.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +10,7 @@ import { AlertComponent } from '../components/alert/alert.component';
   styleUrls: ['home.page.scss'],
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, RinkStatsComponent, AlertComponent]
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, RinkStatsComponent]
 })
 export class HomePage implements OnInit {
 
